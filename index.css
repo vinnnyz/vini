@@ -49,3 +49,7 @@ footer p{
 nav a:hover{
     color: green;
 }
+section{
+    width: 75%;
+    margin:auto;
+}

@@ -53,3 +53,7 @@ section{
     width: 75%;
     margin:auto;
 }
+main img {
+    width: 500px;
+    height: 700px;
+}

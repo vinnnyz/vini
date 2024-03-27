@@ -53,3 +53,9 @@ section{
     width: 75%;
     margin:auto;
 }
+
+section{
+   width: 100%;
+   heigth: auto;
+   position: relative;
+}

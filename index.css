@@ -59,3 +59,8 @@ section{
    heigth: auto;
    position: relative;
 }
+
+.titulo{
+   width:100%;
+   text-align: center;
+}

@@ -26,60 +26,54 @@
     
       <header>
 
-<h1 class="titulo"> Trablaho: Folhas de Calculo</h1>
+<h1 class="titulo"> Trabalho: Folhas de cálculo</h1>
 
     </header>
     <main>
 
         <section>
          <section img>
-            <h3 class="titulo"></h3><br>
-            <p>Este trabalho foi desenvolvido com o intuito de demontras conhecimento pratico na criação de folhas de calculos atraves do ecxel.<br>
-            <br> E para este exercicio eu escolhi criar uma folha de ponto, onde se estabelece que:<br>
-                um funcionario de uma determinada empresa registra seus hôrarios de entrada saída e pausa de almôço durante seu espediente mensal.<br>
-            Este funcionario trabalha em um regime de 8hrs diarias e todas as hôras essedentes a esta media são consideras como hôras extra,<br>
-            támbem são consideradas hôras extra todas as hôras trabalhadas em dias não uteis como sabados, domingos, e feriados.<br>
-            Atravez dos registros de espediente esta folha de pontos tem como função: </p>
+        
+            <p>Este trabalho foi desenvolvido com o intuito de demonstrar conhecimento prático na criação de folhas de cálculos através do Excel.<br>
+            <br>E para este exercício eu escolhi criar uma folha de ponto, onde se estabelece que:<br>
+                Um funcionário de uma determinada empresa regista os seus horários de entrada, saída e pausa de almoço durante o seu expediente mensal.<br>
+            Este funcionário trabalha num regime de 8hrs diárias e todas as horas excedentes a esta media são consideras como horas extra,<br>
+            Também são consideradas horas extra todas as horas trabalhadas em dias não úteis como sábados, domingos, e feriados.<br>
+            Através dos registos de expediente esta folha de pontos tem como função: </p>
                 <ul>
-                    <li>calcular o numero total de hôras diarías trabalhadas;</li>
-                    <li>reconhecer se ouveram hôras extras e determinar quantas;</li>
-                    <li>calcular o numero total de hôras mensais trabalhadas;</li>
-                    <li>calcular o numero total de hôras extras trabalhadas no periodo mensal;</li>
+                    <li>Calcular o número total de horas diárias trabalhadas;</li>
+                    <li>Reconhecer se houve horas extras e determinar quantas;</li>
+                    <li>Calcular o número total de horas mensais trabalhadas;</li>
+                    <li>Calcular o número total de horas extras trabalhadas no período mensal;</li>
                 </ul>
    <h3 class="titulo">Criando a folha de pontos:</h3>
               <img src="./public/colunas.JPG"></img>
              <br>
- <p>Em display na folha foi criada algumas colunas para o tratamento de data, e a disposição delas são:</p> 
-               <ul>
-                    <li>uma secção de <b>Periodos</b> contendo as colunas: Data, Dia da semana e uma para estabelecer se são dias Uteis ou não;</li>
-                    <li>uma secção de <b>Espediente</b> contendo as colunas: Entrada, saida para almoço, retorno do almoço e saida;</li>
-                    <li>uma secção de <b>Calculos de hôras</b> contendo as colunas: Total diario, Hôras extras, Total mensal e Total de hôras extras;</li>
-                    <li>já no topo da folha temuma secção de contendo algumas infomações do funcionario como: Nome, Função e o Mês;</li>
-                </ul>
-          
-            
-     
-            <h3 class="titulo">Formulas</h3>
-            <p>Para se obter as informações dos calculos desejados, foram nessesarias algumas formatações das disposições numericas<br>
-                pois tencionamos trabalhar com o formato de hôras, assim como tambem foram aplicadas algumas formulas matematicas e logicas <br>
-            para que o processo fosse automatizado. sendo elas:</p>
-             
-  <img src="./public/FDPonto.JPG"></img>
-             <br>
-              <ul>
-                    <li><b>calculo de numero total de hôras diarías:</b>  =(E?-D?)+(G?-F?)<br>
-                        <b>Ou seja:</b> (hr de Saida para almoço - hr de Entrada) + (hr de Saída - hr de Retorno do almoço) = Total de horas diarias.<br></li>
-                  
-                    <li><b>Logica para reconhecer se ouveram hôras extras e determinar quantas:</b> =SE(C?="NÃO";H?;H?-(8/24))<br>
-                        <b>Ou seja:</b> Se ( "NÃO" for um dia util; numero de hrs extras vai ser igual ao numero total de horas diarias; 
-                   <br> se for um dia util então o numero de horas extras será = Total diario - 8hrs de me dia diaria.<br> </li>
-                  
-                  <li><b>calculo de numero total de hôras mensais trabalhadas:</b> =SOMA(H6:H36)
-                      <br><b> Ou seja:</b> o total de horas mensais = a Soma de todos elementos dentro da coluna ( Total hrs diarias).<br></li>
-                  
-                  <li><b>calculo de numero total de hôras extras trabalhadas no periodo mensal:</b> =SOMA(I6:J36)
-                      <br><b>Ou seja:</b> o total de horas extras mensais = a Soma de todos elementos dentro da coluna ( Hôras extras ). <br></li>
-                </ul>
+<p>No display da folha foram criadas algumas colunas para o tratamento de datas, e a disposição delas é:</p>
+<ul>
+    <li>uma seção de <b>Períodos</b> contendo as colunas: Data, Dia da semana e uma para estabelecer se são dias úteis ou não;</li>
+    <li>uma seção de <b>Expediente</b> contendo as colunas: Entrada, saída para almoço, retorno do almoço e saída;</li>
+    <li>uma seção de <b>Cálculos de horas</b> contendo as colunas: Total diário, Horas extras, Total mensal e Total de horas extras;</li>
+    <li>já no topo da folha tem uma seção contendo algumas informações do funcionário como: Nome, Função e o Mês;</li>
+</ul>
+
+<h3 class="titulo">Fórmulas</h3>
+<p>Para se obter as informações dos cálculos desejados, foram necessárias algumas formatações das disposições numéricas<br>
+    pois tencionamos trabalhar com o formato de horas, assim como também foram aplicadas algumas fórmulas matemáticas e lógicas <br>
+    para que o processo fosse automatizado, sendo elas:</p>
+<img src="./public/FDPonto.JPG">
+<br>
+<ul>
+    <li><b>Cálculo do número total de horas diárias:</b> =(E?-D?)+(G?-F?)<br>
+        <b>Ou seja:</b> (hora de Saída para almoço - hora de Entrada) + (hora de Saída - hora de Retorno do almoço) = Total de horas diárias.<br></li>
+    <li><b>Lógica para reconhecer se houve horas extras e determinar quantas:</b> =SE(C?="NÃO";H?;H?-(8/24))<br>
+        <b>Ou seja:</b> Se ("NÃO" for um dia útil; número de horas extras será igual ao número total de horas diárias; 
+        <br>se for um dia útil então o número de horas extras será = Total diário - 8 horas da jornada diária.<br></li>
+    <li><b>Cálculo do número total de horas mensais trabalhadas:</b> =SOMA(H6:H36)
+        <br><b>Ou seja:</b> o total de horas mensais = a soma de todos os elementos dentro da coluna (Total de horas diárias).<br></li>
+    <li><b>Cálculo do número total de horas extras trabalhadas no período mensal:</b> =SOMA(I6:J36)
+        <br><b>Ou seja:</b> o total de horas extras mensais = a soma de todos os elementos dentro da coluna (Horas extras).<br></li>
+</ul>
            
          </section>
         </section>

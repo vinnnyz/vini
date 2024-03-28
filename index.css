@@ -4,11 +4,12 @@ body{
    font-family: Arial, Helvetica, sans-serif;
 }
 nav ul {
-    display: FLEX;
-    justify-content: space-between;
+        display: grid;
     list-style-type: none;
-    align-items: center;
-    padding: 16px;
+    padding: 16px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
 }
 a {
     color: white;

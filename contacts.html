@@ -64,14 +64,17 @@
 
               <ul>
                     <li>calculo de numero total de hôras diarías:  <b>=(E?-D?)+(G?-F?)</b><br>
-                        Ou seja: (hr de Saida para almoço - hr de Entrada) + (hr de Saída - hr de Retorno do almoço) = Total de horas diarias.</li>
+                        Ou seja: (hr de Saida para almoço - hr de Entrada) + (hr de Saída - hr de Retorno do almoço) = Total de horas diarias.<br></li>
+                  
                     <li>Logica para reconhecer se ouveram hôras extras e determinar quantas: <b>=SE(C6="NÃO";H?;H?-(8/24))</b><br>
                         Ou seja: Se ( "NÃO" for um dia util; numero de hrs extras vai ser igual ao numero total de horas diarias; 
-                   <br> se for um dia util então o numero de horas extras será = Total diario - 8hrs de me dia diaria. </li>
-                    <li>calculo de numero total de hôras mensais trabalhadas: =SOMA(H6:H36)
-                      <br> Ou seja: o total de horas mensais = a Soma de todos elementos dentro da coluna ( Total hrs diarias) ;</li>
-                    <li>calculo de numero total de hôras extras trabalhadas no periodo mensal: =SOMA(I6:J36)
-                      <br>Ou seja: o total de horas extras mensais = a Soma de todos elementos dentro da coluna ( Hôras extras )   ;</li>
+                   <br> se for um dia util então o numero de horas extras será = Total diario - 8hrs de me dia diaria.<br> </li>
+                  
+                  <li>calculo de numero total de hôras mensais trabalhadas: <b>=SOMA(H6:H36)</b>
+                      <br> Ou seja: o total de horas mensais = a Soma de todos elementos dentro da coluna ( Total hrs diarias).<br></li>
+                  
+                  <li>calculo de numero total de hôras extras trabalhadas no periodo mensal: <b>=SOMA(I6:J36)</b>
+                      <br>Ou seja: o total de horas extras mensais = a Soma de todos elementos dentro da coluna ( Hôras extras ). <br></li>
                 </ul>
            
          </section>

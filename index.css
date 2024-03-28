@@ -5,7 +5,8 @@ body{
    margin: 0;
 }
 nav ul {
-        display: grid;
+    position: fixed; 
+    display: grid;
     list-style-type: none;
     padding: 1.5em 0;
     grid-template-columns: 1fr 1fr 1fr;

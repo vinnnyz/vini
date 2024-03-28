@@ -5,12 +5,14 @@ body{
    margin: 0;
 }
 nav ul {
-        display: grid;
+    display: grid;
     list-style-type: none;
-    padding: 16px 0;
+    padding: 1.5em 0;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-content: center;
+    margin: 0 0 3em;
+    background-color: #175ad5;
 }
 a {
     color: white;

@@ -15,6 +15,8 @@ nav ul {
     margin: 0 0 3em;
     background-color: #003391;
     width: 100%;
+   top: 0;
+   z-index: 1000;
 }
 a {
     color: white;
@@ -76,4 +78,8 @@ section img{
     align-content: flex-start;
     align-items: flex-start;
     padding: 0;
+}
+header{
+    padding-top: 7em; 
+
 }
